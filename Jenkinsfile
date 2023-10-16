@@ -26,9 +26,7 @@ pipeline {
         script {
             def s3Bucket = 'my-automation1997-bucket'
             def artifactName = 'vprofile-v2.war'
-            def localPath = '/target/vprofile-v2.war'
-
-            sh "aws s3 cp ${localPath}/${artifactName} s3://${s3Bucket}/${artifactName}"
+            sh "aws s3 cp vprofile-v2.war s3://${s3Bucket}/${artifactName}"
         }
     }
 }
