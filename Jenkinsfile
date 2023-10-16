@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy'){
             steps {
                 script{
-                  sshagent(credentials: [ubuntu])
+                  sshagent(credentials: [ec2-creds])
                   sh "scp -o StrictHostKeyChecking=no target/vprofile-v2.war ubuntu@16.171.227.178:/home/ubuntu/"
 sh "ssh ubuntu@16.171.227.178 "sudo cp -rf /home/ubuntu/vprofile-v2.war /var/lib/tomcat9/webapps""
 sh "ssh ubuntu@16.171.227.178 "sudo systemctl restart tomcat9""
