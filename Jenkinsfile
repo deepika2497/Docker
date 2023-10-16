@@ -40,8 +40,8 @@ sh "ssh ubuntu@16.171.227.178 "sudo systemctl restart tomcat9""
                //     sh "aws s3 cp target/vprofile-v2.war s3://automation999/vprofile-artifact/vprofile-v1.war"
                // }
          //   }
-        }
+       // }
 
 
-    }
-}
+   // }
+//}
