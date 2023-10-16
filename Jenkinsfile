@@ -36,7 +36,7 @@ sh "ssh ubuntu@16.171.227.178 "sudo systemctl restart tomcat9""
 
         //stage("Upload Artifact s3") {
           //  steps {
-                script {
+               // script {
                //     sh "aws s3 cp target/vprofile-v2.war s3://automation999/vprofile-artifact/vprofile-v1.war"
                // }
          //   }
